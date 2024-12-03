@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://jocekav.github.io/sitemap.xml
+Sitemap: https://jocekav.github.io/website/sitemap.xml
