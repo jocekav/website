@@ -2,14 +2,14 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Academic Professional and Technical Director at Georgia Tech School of Music
+subtitle: Academic Professional and Technical Director at <a href='music.gatech.edu'> Georgia Tech School of Music </a>
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Office: Couch 209B</p>
-    <p>jocelyn.kavanagh@gatech.edut</p>
+    <p>jocelyn.kavanagh@gatech.edu</p>
 
 news: false # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
