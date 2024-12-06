@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Academic Professional and Technical Director at <a href='music.gatech.edu'> Georgia Tech School of Music </a>
+subtitle: Academic Professional and Technical Director at <a href='https://music.gatech.edu/'> Georgia Tech School of Music </a>
 profile:
   align: right
   image: prof_pic.jpg
