@@ -1,10 +1,10 @@
 ---
 layout: page
-title: turn-taking
-description: turn-taking
+title: Turn Taking for Robotic Musicians
+description: Developing a generative improvisation system
 img: 
 importance: 1
-category: work
+category: graduate-research
 related_publications: false
 ---
 
