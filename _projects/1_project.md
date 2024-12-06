@@ -1,81 +1,22 @@
 ---
 layout: page
-title: project 1
-description: with background image
-img: assets/img/12.jpg
+title: turn-taking
+description: turn-taking
+img: 
 importance: 1
 category: work
-related_publications: true
+related_publications: false
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+Turn-taking is an important part of improvisational, collaborative music, and it can be likened to human conversation. However, in the robotic musicianship space, turn-taking is typically fixed to straight-ahead schemes. My research aims to develop a new musical turn-taking model based on conversational analysis and observations of free improvisation and jam bands.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+# Studying Improvisation
+Before development, I studied group improvisation by annotating live performance videos, conducting ethnomusilogical interviews, and reading jazz literature.
+I developed an initial turn-taking taxonomy to annotate videos of improvisers and jam bands. The videos were validated for improvisation using their title and comments, and they covered the genres of free jazz, straight ahead jazz, rock, soul, and free improvisation. Annotate.TV was used to facilitate the annotations, and the annotations were marked at turn transition points. Additionally, annotations included notes on specific physical gestures related to turn transitions.
+I interviewed members of the Atlanta Improvisor Orchestra on their perspectives on improvisation. Interviews focused on the musical features performers listen for when improvising in a group, how individuals construct musical phrases, and how physical gestures impact performance.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images, even citations {% cite einstein1950meaning %}.
-Say you wanted to write a bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}
+# The System
+I developed a new model for dynamic leader-follower turn-taking, using the insights gained from the annotations, interviews, and reading improvisation journals. The musician interacts with Shimon, a robotic marimba player, via MIDI keyboard. The system was built with Python and Max/MSP.
+The system is a state machine with 2 states: leader and follower. In the leader state, Shimon improvises and introduces new themes and ideas. In the follower state, Shimon primarily listens and echoes the user's phrases. The state transitions are determined by varying probabilities set by the length of time in a state and features of the user input including similarity, dynamics, note density, and key.
+I also developed a genetic algorithm for the musical output during each state. The algorithm uses jazz solos and licks as the initial population and a weighted aggregate function based on similarity for the fitness function.
+Finally, I created physical gestures for Shimon. The turn-taking interaction is led by Shimon's gestures. Each state has its own gestures that are based on observations from the video annotations.
