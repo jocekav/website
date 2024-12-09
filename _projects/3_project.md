@@ -2,10 +2,9 @@
 layout: page
 title: FOREST
 description: Developing generative music and dance for robotic arms
-img: assets/img/7.jpg
-redirect: https://unsplash.com
+img: 
 importance: 3
-category: work
+category: graduate-research
 ---
 
 FOREST is an NSF funded project aimed at enhancing trust between humans and robots through sound and gesture. I focused on generative music and robotic dances based on patterns. The project used 10 robotic XArm factory robots controlled by Python and Matlab scripts.

@@ -2,10 +2,9 @@
 layout: page
 title: Shimi
 description: Advising undergraduate student work on companion musical robot
-img: assets/img/3.jpg
+img: 
 importance: 2
 category: graduate-research
-giscus_comments: false
 ---
 
 Shimi is a small companion robot that was created by the Georgia Tech Robotic Musicianship Lab as a dancing musical assistant. After a few years of the project being dormant, Shimi has been reimagined as an assistant for the deaf and hard of hearing (DHH) community.
