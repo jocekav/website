@@ -1,80 +1,32 @@
 ---
 layout: page
-title: project 6
-description: a project with no image
+title: Buzz Mascot Program
+description:
 img:
-importance: 4
+importance: 2
 category: fun
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+# Scripting
+I love to optimize and create automation to better support my workflows in life. When I started working with the Buzz mascot program, almost every task was a manual effort from creating invoices, sending emails, and discovering yearly metrics.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+To better understand the demand for the mascot and individual student contributions, I built a script that scrubs our shared Google calendar and outputs event metrics. It is built in an App Script for Google sheets, and provides information about which students attended events, what kind of events were attended, and the appearance fee totals. Although a relatively straightforward script, it has made a large impact on the program, namely through quantifying student effort for scholarship and quantifying Buzz's impact for donors.
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+I also created an automated quote/invoice generator. Again when I started working with the program, we manually invoiced every customer. This led to backlog and delayed invoicing as we played catch-up against the numerous appearance requests. In Python, I created a script that scrubs our calendar and the appearance request inbox to generate scripts. Again, though an easy lift, this as streamlined our invoicing process allowing us to better serve customers and keep our budget balanced.
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+# Fundraising
+As coordinator of the Buzz mascot program, I have created new sources of revenue and funding for the program. 
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+I conducted market research and implemented appearance rate revisions. We had kept a consistent fee structure for many years, and it was out of date to the market. I introduced a new tiered pricing system that increased program revenue as well as student payments. Under the pricing structure, we have more appearance requests, despite raised pricing, and have incentivized customers to request Buzz for the most optimal appearance timing without forgoing revenue for the program.
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+I also introduced new packages for sale for our fundraising efforts. I created the Buzz Valentine-Gram program where Buzz delivers packages for Valentine's day. For a week long effort, we net a minimum of $1000 in fundraising with increases yearly. I am responsible for every stage in the process: purchasing merchandise, taking and scheduling orders, and coordinating deliveries.
 
-{% raw %}
+I have also been able to maintain and grow donor relationships through campus outreach and alumni network. The Buzz program did not have a connected alumni network when I started. Due to the anonymity of the mascot role and lack of rosters, I reached out to target individuals to track alums. We now have a group that spans every year of the mascot's existence which can be leveraged for fundraising efforts.
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
+# Nationals Competition Production Management
+Each year, the Buzz mascot program competes in the the National Cheerleading Association's mascot competition. In the competition, mascots present a short skit that showcases their personality, dancing skills, and prop usage. 
 
-{% endraw %}
+As coach, I manage the efforts of our 8 student mascot team and lead the ideation, design, development, and execution of the skit each year. From October to April, I organize each phase of production and construct timelines and tasks for students. We build new props and set pieces, choreograph dances, mix music, and develop a story through line each year. It is a personal goal of mine to continually stretch the boundaries of the competition and "out create" ourselves each year. There is no blueprint for the competition and each skit is unique from the last. 
+
+
